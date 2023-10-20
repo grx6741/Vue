@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid red;
+}
+
+#top-bar {
+    padding-bottom: 1%;
+}
+
+#container {
+    display: flex;
+}
+
+.my-video {
+    flex: 3;
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    background-color: black;
+}
+
+#episodes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+#episode {
+    text-align: center;
+}
+
+input {
+    border: none;
+}

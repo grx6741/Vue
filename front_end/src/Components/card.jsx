@@ -1,9 +1,11 @@
-const Card = ({ name, image_url }) => {
+import React from "react";
 
+const Card = ({ name , handleClick, setName, setLink }) => {
     return (
-        <div>
-            <p><b>{name}</b></p>
-            <img src={image_url} alt={name}/>
+        <div className="cards" >
+            <button className="cards-button" onClick={handleClick}>
+                <b>{name}</b>
+            </button>
         </div>
     );
 }

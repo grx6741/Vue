@@ -1,0 +1,51 @@
+* {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+
+#center-box{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.text-box{
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+    padding: 2%;
+    margin: 2%;
+}
+
+#linker{
+ position: relative;
+ float: right;
+}
+
+#contents{
+    padding: 10%;
+    height: 100%;
+    border: 1px solid blueviolet;
+}
+
+#title{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#cards{
+   
+
+}
+#card1{
+    background: #605C5C;
+
+}
+/* Rectangle 68 */
+
