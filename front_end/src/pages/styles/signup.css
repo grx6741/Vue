@@ -14,21 +14,21 @@
 }
 .text-box{
     display: flex;
-  justify-content: center;
-  flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
 }
 
-input {
+#text-box input {
     padding: 2%;
     margin: 2%;
 }
 
 #linker{
- position: relative;
- float: right;
+    position: relative;
+    float: right;
 }
 
-#contents{
+#contents {
     padding: 10%;
     height: 100%;
     border: 1px solid blueviolet;
@@ -39,13 +39,7 @@ input {
     margin-bottom: 2%;
 }
 
-#cards{
-   
-
-}
 #card1{
     background: #605C5C;
 
 }
-/* Rectangle 68 */
-

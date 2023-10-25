@@ -1,3 +1,13 @@
+#home-page {
+
+}
+
+#top-bar {
+    border: 3px solid black;
+    margin: 5%;
+    display: flex;
+}
+
 #card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,8 +18,19 @@
     text-align: center
 }
 
-#top-bar {
-    padding: 10px;
+#form {
+    height: 10%;
+    flex: 1;
+    display: flex;
+    padding: 2%;
+}
+
+#name-input {
+    flex: 9;
+}
+
+#name-submit {
+    flex: 1;
 }
 
 .cards-button {

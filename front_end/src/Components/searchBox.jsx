@@ -8,7 +8,6 @@ const SearchBox = ({ addAnimes , setLoading, reset }) => {
         event.preventDefault();
         reset();
         setLoading(true);
-        // clearAnimePage();
         fetch('http://127.0.0.1:5000/getAnime/' + text.replace(' ', '-'))
             .then(resp => resp.json())
             .then( links_and_names => {
@@ -23,10 +22,10 @@ const SearchBox = ({ addAnimes , setLoading, reset }) => {
     return (
         <>
             <form onSubmit={handleSubmit} id="form">
-                <input type="text" name="name" placeholder="Enter Name" value={text} onChange={(e) => { 
+                <input id="name-input" type="text" name="name" placeholder="Enter Name" value={text} onChange={(e) => { 
                     setText(e.target.value);
                 }}/>
-                <input type="submit" value="Enter"/>
+                <input id="name-submit" type="submit" value="Enter"/>
             </form>
         </>
     );
