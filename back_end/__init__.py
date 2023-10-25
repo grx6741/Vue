@@ -62,16 +62,20 @@ def addComment(anime_name, user_name, comment):
     return {'success' : 'true'}
 
 def _get_users():
-    with open('back_end/database/users.json') as f:
-        content = f.read()
-        print(content)
-        if content != '':
-            users = json.load(f)
-        else:
-            users = {'len' : 0}
-    return users
+    try:
+        with open('back_end/database/users.json') as f:
+            content = f.read()
+            print(content)
+            if not content:
+                users = {'len' : 0}
+            else:
+                users = json.load(f)
+        return users
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 def _add_users(name, details):
+    print(name, details)
     users = _get_users()
     if name in users:
         return False
